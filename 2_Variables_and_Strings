@@ -1,0 +1,41 @@
+# lesson 2
+# Variables
+>>> x = 3.14
+>>> x
+3.14
+>>> pi = 3.14
+>>> pi * 3
+9.42
+
+>>> val = 9.81
+>>> type(val)
+class 'float'
+
+>>> val = 1861
+>>> type(val)
+class 'int'
+
+# strings -> textual values
+>>> frase = 'Una volta imparato, Python si dimostra estremamente versatile'
+>>> type(frase)
+class 'str'
+
+>>> frase2 = "Python è uno dei migliori linguaggi per iniziare a programmare"
+>>> frase2
+'Python è uno dei migliori linguaggi per iniziare a programmare'
+
+>>> "e Dante scrisse: "Nel mezzo del cammin di nostra vita...""
+  File "", line 1
+    "e Dante scrisse: "Nel mezzo del cammin di nostra vita...""
+                         ^
+SyntaxError: invalid syntax
+
+# Per ovviare a questo problema possiamo utilizzare gli apici singoli per definire la stringa, oppure utilizzare un backslash ( \ ) prima dei caratteri "scomodi".
+>>> "e Dante scrisse: \"Nel mezzo del cammin di nostra vita...\""
+'e Dante scrisse: "Nel mezzo del cammin di nostra vita..."'
+
+# Le stringhe possono inoltre essere concatenate tra di loro per ottenere delle concatenazioni di testo
+>>> eggs = "Meglio un uovo oggi..."
+>>> bacon = "o una gallina domani?"
+>>> eggs + bacon
+'Meglio un uovo oggi...o una gallina domani?'
