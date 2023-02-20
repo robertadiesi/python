@@ -1,0 +1,36 @@
+# let's learn how to use python
+# lesson 1
+# simple operations with integers
+
+>>> 3+3
+6
+>>> 4-2
+2
+>>>5*4     
+20
+>>> 9/3
+3.0
+
+
+# but also with float data
+
+# how to recognize the different types of data? with type() function
+>>> x=69
+>>>> type(x)
+<class 'int'>
+>>> x=4.20
+>>> type(x)
+<class 'float'>
+
+
+# exponential calculations
+>>> 3**3
+27
+
+# Floor Division per divisioni intere (// quoziente)
+>>> 30 // 4
+7
+
+# ottenere il resto di una divisione utilizzando un operatore chiamato modulo, rappresentato dal simbolo %
+>>> 30 % 7
+2
