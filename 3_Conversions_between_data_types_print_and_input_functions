@@ -1,0 +1,92 @@
+# Come fare ad esempio a combinare un numero intero con una stringa?
+# Facciamo delle prove: definiamo una variabile age (età) e assegnamole un numero intero
+>>> age = 30
+
+# Definiamo ora un'altra variabile e assegnamole una stringa:
+>>> text = "La mia età è: "
+>>> text + age
+
+# output
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    text + age
+TypeError: can only concatenate str (not "int") to str
+
+# abbiamo un errore perchè l'operatore + non è compatibile per somme tra interi e stringhe
+# esistono delle funzioni integrate che fanno la conversione per noi
+# Per convertire un valore in stringa ad esempio, usiamo la funzione str()
+
+>>> text + str(age)
+'La mia età è: 30'
+
+# Analizziamo ora il caso opposto, ovvero il caso in cui abbiamo una stringa composta solo da caratteri numerici
+# vogliamo convertirla in numero intero per usarla così in dei calcoli matematici
+# creiamo una variabile chiamata arance_per_sacco e assegnamole una stringa composta da caratteri numerici, in questo caso magari, un 13:
+
+>>> arance_per_sacco = "13"
+
+# Come fare ora ad ottenere il numero totale di arance presenti in tre sacchi?
+>>> arance_per_sacco * 3
+
+# output
+'131313'
+
+# bisogna fare una conversione anche in questo caso
+# La funzione che utilizzeremo in questo caso è, come è possibile immaginare per logica, la funzione int().
+
+>>> int(arance_per_sacco) * 3
+39
+
+# Qualora dovessimo alterare il valore associato alla variabile dovremmo ri effettuare l'assegnazione:
+
+>>> arance_per_sacco
+'13'
+>>> type(arance_per_sacco)
+<class 'str'>
+
+>>> arance_per_sacco = int(arance_per_sacco)
+>>> arance_per_sacco
+13
+>>> type(arance_per_sacco)
+<class 'int'>
+
+
+# vediamo ora la FUNZIONE PRINT
+# Ció che print() fa è mostrarci in output ció che le passiamo come parametro
+>>> print(str(33) + " trentini entrarono a Trento... passando per la funzione print!")
+# output
+'33 trentini entrarono a Trento... passando per la funzione print!'
+
+# Per andare a capo si utilizza il carattere newline, ovvero \n, in questo modo:
+
+>>> print("Prima riga\nSeconda riga\necc ecc...")
+
+# output
+Prima riga
+Seconda riga
+ecc ecc...
+
+# Oppure potete direttamente effettuare un print multilinea utilizzando 3 apici o doppi apici, in questo modo:
+
+>>> print("""prima linea
+seconda linea
+terza linea...""")
+
+prima linea
+seconda linea
+terza linea...
+
+
+
+# la funzione input invece ci serve per l'inserimento di dati da parte dell'utente, in fase di esecuzione
+# ciò che inserirete tramite input() verrà passato a Python sotto forma di stringa
+>>> x = input()
+23
+
+# Come possiamo verificare con la funzione integrata type(), anche se abbiamo inserito apparentemente un numero, questo viene assegnato alla variabile sotto forma di stringa!
+
+>>> type(x)
+class 'str'
+
+
+# Scriviamo il nostro primo programma Python!
